@@ -1,3 +1,7 @@
+html {
+     scroll-behavior: smooth;
+}
+
 body {
      font-family: 'Montserrat', sans-serif;
 }
@@ -20,7 +24,7 @@ body {
 .navbar-nav .nav-link {
      position: relative;
      font-weight: 500;
-     color: #1d3557;
+     color: #181c32;
      padding: 0.5rem 1rem;
      border-radius: 6px;
      transition: all 0.3s ease;
@@ -44,7 +48,7 @@ body {
      left: 0;
      right: 0;
      bottom: 0;
-     background-color: #1f475d;
+     background-color: #181c32;
      border-radius: 6px;
      z-index: -1;
      opacity: 0;
@@ -110,6 +114,26 @@ p {
      text-wrap: pretty;
 }
 
+.btn-eviar {
+     background-color: #181C32;
+     color: #fff;
+     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-eviar:hover {
+     background-color: #2e3b5d;
+     /* un tono más claro que #181C32 */
+     color: #ffffff;
+}
+
+
+.link {
+     color: #181C32;
+}
+
+.link:hover {
+     color: #2e3b5d;
+}
 
 .card {
      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
@@ -189,4 +213,27 @@ p {
      color: #4a4a4a;
      font-size: 0.95rem;
      line-height: 1.6;
+}
+
+.lead {
+     font-size: 20px;
+     font-weight: 500;
+}
+
+.whatsapp-icon-svg {
+     fill: #25D366;
+     transition: fill 0.3s ease;
+}
+
+.whatsapp-label {
+     color: #1d3557;
+     transition: color 0.3s ease;
+}
+
+.whatsapp-icon:hover .whatsapp-icon-svg {
+     fill: #fff;
+}
+
+.whatsapp-icon:hover .whatsapp-label {
+     color: #fff;
 }

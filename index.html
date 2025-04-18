@@ -2,377 +2,569 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Monitoreo</title>
-    <link rel="shortcut icon" href="/assets/media/logos/favicon-32x32.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Monitoreo</title>
+  <link rel="shortcut icon" href="/assets/media/logos/favicon-32x32.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Encabezado con nav -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container d-flex align-items-center justify-content-between">
-          <!-- Logo -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="assets/logo/data_monitoreo2.png" alt="Intersel Logo" width="150" />
-          </a>
-  
-          <!-- Botón hamburguesa -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <!-- Menú -->
-          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-center">
-              <li class="nav-item"><a class="nav-link nav-btn" href="#">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link nav-btn" href="#">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link nav-btn" href="#">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link nav-btn" href="#">Contacto</a></li>
-              <li class="nav-item">
-                <a class="nav-link nav-btn whatsapp-icon" href="#">
-                  <img src="whatsapp-icon.svg" alt="WhatsApp" style="height: 24px;" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-  
-    <!-- Contenido principal -->
-    <main>
-      <section class="banner-section section-kNXIRmxfcw text-center text-md-start py-5 bg-banner">
+  <!-- Encabezado con nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/logo/data_monitoreo2.png" alt="Intersel Logo" width="150" />
+        </a>
 
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-10 col-lg-8">
-              <h1 class="fw-bold text-center mb-3">
-                Control y administración inteligente de las comunicaciones
-              </h1>
-              <p class="lead text-center">
-                Monitorea las comunicaciones y optimiza la eficiencia de tu equipo de trabajo con soluciones
-                inteligentes.
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link nav-btn" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link nav-btn" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link nav-btn" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link nav-btn" href="#ventajas">Ventajas</a></li>
+          <li class="nav-item"><a class="nav-link nav-btn" href="#contacto">Contacto</a></li>
+          <li class="nav-item">
+            <a href="https://wa.me/5215512345678" target="_blank"
+               class="nav-link nav-btn d-flex align-items-center gap-1 whatsapp-icon text-decoration-none text-dark">
+               
+              <!-- SVG -->
+              <svg class="whatsapp-icon-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.373 0 12c0 2.12.556 4.104 1.52 5.844L0 24l6.332-1.648A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.798 0-3.49-.49-4.963-1.342l-.353-.211-3.76.977.997-3.66-.23-.375A9.964 9.964 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.297-7.418c-.26-.13-1.535-.757-1.773-.843-.237-.087-.41-.13-.582.13-.173.26-.668.843-.82 1.015-.15.173-.303.195-.563.065-.26-.13-1.1-.404-2.095-1.288-.775-.691-1.296-1.544-1.447-1.803-.15-.26-.016-.4.113-.53.116-.116.26-.303.39-.454.13-.15.173-.26.26-.43.086-.173.043-.325-.022-.455-.065-.13-.582-1.408-.798-1.93-.21-.504-.423-.435-.582-.443-.15-.007-.325-.01-.5-.01s-.455.065-.693.325c-.237.26-.9.878-.9 2.14 0 1.262.92 2.48 1.05 2.65.13.173 1.813 2.77 4.4 3.885.615.265 1.094.422 1.467.54.615.197 1.177.17 1.62.103.494-.073 1.535-.626 1.753-1.23.217-.604.217-1.122.152-1.23-.065-.107-.237-.173-.497-.303z"/>
+              </svg>
+          
+              <!-- Texto -->
+              <span class="small whatsapp-label">WhatsApp</span>
+            </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section id="incio" class="banner-section section-kNXIRmxfcw text-center text-md-start py-5 bg-banner">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h1 class="fw-bold text-center mb-3">
+            Monitoreo y análisis inteligente de llamadas entrantes
+          </h1>
+          <p class="lead text-center">
+            En Data Monitoreo, transformamos cada llamada en una oportunidad. Graba, escucha y analiza tus
+            comunicaciones para mejorar la atención al cliente y optimizar tus procesos comerciales.
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 col-md-10 col-lg-8">
+
+          <!-- Imagen para escritorio -->
+          <img src="assets/header.png" alt="Banner Intersel" class="img-fluid d-none d-md-block rounded-4" />
+
+          <!-- Imagen para mobile -->
+          <img src="assets/header.png" alt="Banner Intersel Mobile" class="img-fluid d-block d-md-none rounded-4" />
+
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-12 col-md-10 col-lg-8">
+          <p class="fw-semibold text-center">
+            "Escucha, analiza, mejora"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Acerca de nosotros</h2>
+        <!-- Bloque 1: 2 párrafos + imagen derecha -->
+        <div class="row align-items-center g-5 mb-5">
+          <div class="col-12 col-lg-6">
+            <div class="text-relaxed">
+              <p>
+                En Data Monitoreo creemos que cada llamada es una oportunidad. En un entorno donde las decisiones se
+                toman con base en datos, nuestra misión es transformar cada interacción telefónica en información
+                valiosa y accionable para su negocio.
+              </p>
+              <p>
+                Nos especializamos en el trackeo y monitoreo de llamadas entrantes, brindándote un control total sobre
+                tu número telefónico. Con nuestra tecnología, podrás escuchar, grabar y analizar cada llamada,
+                entendiendo mejor a tus clientes y optimizando tus procesos de atención y venta.
               </p>
             </div>
           </div>
-  
-          <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-10 col-lg-8">
-              
-              <!-- Imagen para escritorio -->
-              <img src="assets/portada-desk.jpeg"
-                   alt="Banner Intersel"
-                   class="img-fluid d-none d-md-block" />
-          
-              <!-- Imagen para mobile -->
-              <img src="assets/portada-mobile.jpeg"
-                   alt="Banner Intersel Mobile"
-                   class="img-fluid d-block d-md-none" />
-          
-            </div>
+          <div class="col-12 col-lg-6">
+            <img src="assets/data-monitoreo-1-nostros.png" alt="Trackeo y monitoreo" class="img-fluid" />
           </div>
-          <div class="row justify-content-center mt-4">
-            <div class="col-12 col-md-10 col-lg-8">
-              <p class="fw-semibold text-center">
-                "Escucha, analiza, mejora"
+        </div>
+
+        <!-- Bloque 2: 2 párrafos + imagen izquierda -->
+        <div class="row align-items-center g-5 mb-5 flex-lg-row-reverse">
+          <div class="col-12 col-lg-6">
+            <div class="text-relaxed">
+              <p>
+                Detectamos los días y horarios de mayor actividad, medimos la duración de las llamadas, registramos los
+                números y ubicaciones desde donde se contactan, y generamos informes semanales y mensuales con los datos
+                más relevantes para tus campañas de marketing.
+              </p>
+              <p>
+                Además de darte una visión clara del recorrido de cada cliente, nuestra plataforma te permite
+                identificar patrones de comportamiento, oportunidades de mejora y puntos críticos en la atención al
+                cliente. Todo esto en una herramienta intuitiva, fácil de usar y diseñada específicamente para equipos
+                de marketing.
               </p>
             </div>
           </div>
-      </section>
-
-      <section id="nosotros" class="py-5">
-        <div class="container">
-       <h2 class="text-center mb-5">Acerca de nosotros</h2>
-          <!-- Bloque 1: 2 párrafos + imagen derecha -->
-          <div class="row align-items-center g-5 mb-5">
-            <div class="col-12 col-lg-6">
-              <div class="text-relaxed">
-                <p>
-                  En Data Monitoreo creemos que cada llamada es una oportunidad. En un entorno donde las decisiones se toman con base en datos, nuestra misión es transformar cada interacción telefónica en información valiosa y accionable para su negocio.
-                </p>
-                <p>
-                  Nos especializamos en el trackeo y monitoreo de llamadas entrantes, brindándote un control total sobre tu número telefónico. Con nuestra tecnología, podrás escuchar, grabar y analizar cada llamada, entendiendo mejor a tus clientes y optimizando tus procesos de atención y venta.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6">
-              <img src="assets/data-monitoreo-1-nostros.png" alt="Trackeo y monitoreo"
-                   class="img-fluid" />
-            </div>
+          <div class="col-12 col-lg-6">
+            <img src="assets/data-monitoreo-2-nostros.png" alt="Datos e insights" class="img-fluid " />
           </div>
-      
-          <!-- Bloque 2: 2 párrafos + imagen izquierda -->
-          <div class="row align-items-center g-5 mb-5 flex-lg-row-reverse">
-            <div class="col-12 col-lg-6">
-              <div class="text-relaxed">
-                <p>
-                  Detectamos los días y horarios de mayor actividad, medimos la duración de las llamadas, registramos los números y ubicaciones desde donde se contactan, y generamos informes semanales y mensuales con los datos más relevantes para tus campañas de marketing.
-                </p>
-                <p>
-                  Además de darte una visión clara del recorrido de cada cliente, nuestra plataforma te permite identificar patrones de comportamiento, oportunidades de mejora y puntos críticos en la atención al cliente. Todo esto en una herramienta intuitiva, fácil de usar y diseñada específicamente para equipos de marketing.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6">
-              <img src="assets/data-monitoreo-2-nostros.png" alt="Datos e insights"
-                   class="img-fluid " />
-            </div>
-          </div>
-      
-          <!-- Bloque 3: cierre + imagen derecha -->
-          <div class="row align-items-center g-5">
-            <div class="col-12 ">
-              <div class="text-relaxed">
-                <p class="text-center">
-                  Con Data Monitoreo, no solo gestionas llamadas: mejoras la experiencia del cliente, tomas decisiones más inteligentes y potencias tus resultados de negocio. Acompañamos a tu equipo con capacitaciones y soporte personalizado para que saques el máximo provecho de cada llamada.
-                </p>
-                <p class="fw-semibold mt-3 text-center">
-                  Optimiza tu estrategia con datos reales. Descubre cómo nuestras soluciones pueden llevar tu negocio al siguiente nivel.
-                </p>
-              </div>
-            </div>
-          </div>
-      
         </div>
-      </section>
-      
-      <section class="py-5 bg-banner-01">
-        <div class="container">
-      
-          <h2 class="text-center mb-5">Servicios</h2>
-      
-          <p class="text-center mb-3">
-            Transforma cada llamada en una oportunidad de crecimiento.
-            En Data Monitoreo, sabemos que cada llamada cuenta. Por eso, hemos desarrollado una herramienta de trackeo
-            telefónico que convierte simples interacciones en información estratégica para tu negocio.
-          </p>
-      
-          <p class="text-center mb-5">
-            Con nuestro sistema, monitoreamos tu número telefónico y te brindamos acceso completo para escuchar, registrar y analizar cada llamada entrante. Esto te permite tener el control total sobre tu comunicación con clientes y detectar oportunidades de mejora en tiempo real.
-          </p>
-      
-          <h3 class="text-center mb-5">¿Qué puedes hacer con nuestra herramienta?</h3>
-      
-          <!-- Primer grupo de tarjetas -->
-          <div class="row g-4 justify-content-center">
-            <!-- Tarjeta 1 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 text-center p-4 rounded-4">
-                <img src="assets/st01.png" alt="Escuchar llamadas" class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Escuchar y grabar llamadas entrantes</h5>
-                <p>
-                  Evalúa la calidad de atención, identifica necesidades de capacitación y mejora continua de la experiencia del cliente.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Tarjeta 2 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 text-center p-4 rounded-4 ">
-                <img src="assets/st02.png" alt="Estadísticas clave" class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Acceder a las estadísticas clave</h5>
-                <p>
-                  Visualiza los días y horarios con mayor volumen de llamadas, duración promedio, frecuencia por número y ubicación de origen. Con estos datos, puedes tomar decisiones más inteligentes y ajustar tus campañas en tiempo real.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Tarjeta 3 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 text-center p-4 rounded-4 ">
-                <img src="assets/st03.png" alt="Informes" class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Recibir informes semanales y mensuales</h5>
-                <p>
-                  Te entregamos informes detallados que te permiten evaluar el impacto de tus campañas digitales,
-                  optimizar recursos y mejorar tus procesos comerciales.
-                </p>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Segundo grupo de tarjetas -->
-          <div class="row g-4 justify-content-center mt-2">
-            <!-- Tarjeta 4 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 text-center p-4 rounded-4 mb-4">
-                <img src="assets/st04.png" alt="Marketing" class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Control específico para áreas de marketing</h5>
-                <p>
-                  Nuestra herramienta está diseñada para ser intuitiva y eficiente, con accesorios personalizados
-                  para tu equipo de marketing y atención al cliente.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Tarjeta 5 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 text-center p-4 rounded-4 ">
-                <img src="assets/st05.png" alt="Capacitación personalizada" class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Capacitación personalizada</h5>
-                <p>
-                  Acompañamos a tu equipo en cada paso para que aprovechen al máximo todas las funcionalidades.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Tarjeta 6 -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 text-center p-4 rounded-4 ">
-                <img src="assets/st06.png" alt="Escucha. Analiza. Mejora." class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Escucha. Analiza. Mejora.</h5>
-                <p>
-                  Con Data Monitoreo, transforma cada llamada en una fuente de conocimiento valioso. Mejora la relación con tus clientes, potencia tus campañas y toma decisiones basadas en datos reales.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Tarjeta 7 -->
-            <div class="col-12 col-md-6 col-lg-4 mt-2">
-              <div class="card h-100 text-center p-4 rounded-4 ">
-                <img src="assets/st07.png" alt="Optimiza tu negocio" class="mb-3 mx-auto d-block" width="150" />
-                <h5 class="fw-bold">Lleva tu estrategia al siguiente nivel</h5>
-                <p>
-                  Descubre cómo llevar tu estrategia de marketing al siguiente nivel. Habla con nuestro equipo y empieza a optimizar tu negocio hoy mismo.
-                </p>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </section>
 
-      <section id="ventajas" class="py-5 bg-white">
-        <div class="container">
+        <!-- Bloque 3: cierre + imagen derecha -->
+        <div class="row align-items-center g-5">
+          <div class="col-12 ">
+            <div class="text-relaxed">
+              <p class="text-center">
+                Con Data Monitoreo, no solo gestionas llamadas: mejoras la experiencia del cliente, tomas decisiones más
+                inteligentes y potencias tus resultados de negocio. Acompañamos a tu equipo con capacitaciones y soporte
+                personalizado para que saques el máximo provecho de cada llamada.
+              </p>
+              <p class="fw-semibold mt-3 text-center">
+                Optimiza tu estrategia con datos reales. Descubre cómo nuestras soluciones pueden llevar tu negocio al
+                siguiente nivel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="servicios" class="py-5 bg-banner-01">
+      <div class="container">
+
+        <h2 class="text-center mb-5">Servicios</h2>
+
+        <p class="text-center mb-3">
+          Transforma cada llamada en una oportunidad de crecimiento.
+          En Data Monitoreo, sabemos que cada llamada cuenta. Por eso, hemos desarrollado una herramienta de trackeo
+          telefónico que convierte simples interacciones en información estratégica para tu negocio.
+        </p>
+
+        <p class="text-center mb-5">
+          Con nuestro sistema, monitoreamos tu número telefónico y te brindamos acceso completo para escuchar, registrar
+          y analizar cada llamada entrante. Esto te permite tener el control total sobre tu comunicación con clientes y
+          detectar oportunidades de mejora en tiempo real.
+        </p>
+
+        <h3 class="text-center mb-5">¿Qué puedes hacer con nuestra herramienta?</h3>
+
+        <!-- Primer grupo de tarjetas -->
+        <div class="row g-4 justify-content-center">
+          <!-- Tarjeta 1 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center p-4 rounded-4">
+              <img src="assets/st01.png" alt="Escuchar llamadas" class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Escuchar y grabar llamadas entrantes</h5>
+              <p>
+                Evalúa la calidad de atención, identifica necesidades de capacitación y mejora continua de la
+                experiencia del cliente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center p-4 rounded-4 ">
+              <img src="assets/st02.png" alt="Estadísticas clave" class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Acceder a las estadísticas clave</h5>
+              <p>
+                Visualiza los días y horarios con mayor volumen de llamadas, duración promedio, frecuencia por número y
+                ubicación de origen. Con estos datos, puedes tomar decisiones más inteligentes y ajustar tus campañas en
+                tiempo real.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center p-4 rounded-4 ">
+              <img src="assets/st03.png" alt="Informes" class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Recibir informes semanales y mensuales</h5>
+              <p>
+                Te entregamos informes detallados que te permiten evaluar el impacto de tus campañas digitales,
+                optimizar recursos y mejorar tus procesos comerciales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segundo grupo de tarjetas -->
+        <div class="row g-4 justify-content-center mt-2">
+          <!-- Tarjeta 4 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center p-4 rounded-4 mb-4">
+              <img src="assets/st04.png" alt="Marketing" class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Control específico para áreas de marketing</h5>
+              <p>
+                Nuestra herramienta está diseñada para ser intuitiva y eficiente, con accesorios personalizados
+                para tu equipo de marketing y atención al cliente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 5 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center p-4 rounded-4 ">
+              <img src="assets/st05.png" alt="Capacitación personalizada" class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Capacitación personalizada</h5>
+              <p>
+                Acompañamos a tu equipo en cada paso para que aprovechen al máximo todas las funcionalidades.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 6 -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 text-center p-4 rounded-4 ">
+              <img src="assets/st06.png" alt="Escucha. Analiza. Mejora." class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Escucha. Analiza. Mejora.</h5>
+              <p>
+                Con Data Monitoreo, transforma cada llamada en una fuente de conocimiento valioso. Mejora la relación
+                con tus clientes, potencia tus campañas y toma decisiones basadas en datos reales.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 7 -->
+          <div class="col-12 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100 text-center p-4 rounded-4 ">
+              <img src="assets/st07.png" alt="Optimiza tu negocio" class="mb-3 mx-auto d-block" width="150" />
+              <h5 class="fw-bold">Lleva tu estrategia al siguiente nivel</h5>
+              <p>
+                Descubre cómo llevar tu estrategia de marketing al siguiente nivel. Habla con nuestro equipo y empieza a
+                optimizar tu negocio hoy mismo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="ventajas" class="py-5 bg-white">
+      <div class="container">
+
+        <!-- Título -->
+        <h3 class="text-center mb-5 fw-bold">Nuestras ventajas competitivas</h3>
+
+        <!-- Tarjetas basadas en el texto real -->
+        <div class="row text-center justify-content-center">
+
+          <!-- Ventaja 1 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mb-3">
+                <img src="assets/log1.png" alt="Escuchar llamadas" width="100" height="100" class="rounded-circle p-2">
+              </div>
+              <h5 class="fw-semibold">Escucha y mejora la atención</h5>
+              <p>
+                Escuchar y grabar todas las llamadas para asegurar la calidad en la atención.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ventaja 2 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mb-3">
+                <img src="assets/log2.png" alt="Medición" width="100" height="100" class="rounded-circle p-2">
+              </div>
+              <h5 class="fw-semibold">Medición de interacciones</h5>
+              <p>
+                Medir la duración de cada interacción para entender y optimizar procesos clave.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ventaja 3 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mb-3">
+                <img src="assets/log3.png" alt="Medición" width="100" height="100" class="rounded-circle p-2">
+              </div>
+              <h5 class="fw-semibold">Estadísticas clave</h5>
+              <p>
+                Identificar los días y horarios con mayor volumen de llamadas para ajustar estrategias.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ventaja 4 -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="p-4 border rounded-4 h-100">
+              <div class="mb-3">
+                <img src="assets/log4.png" alt="Medición" width="100" height="100" class="rounded-circle p-2">
+              </div>
+              <h5 class="fw-semibold">Insights de comportamiento</h5>
+              <p>
+                Detectar patrones de comportamiento y puntos críticos en tu proceso de ventas o servicio al cliente.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Texto completo adicional -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-12">
+            <div class="text-relaxed">
+
+              <h4 class="fw-bold text-center mb-4">Convierte cada llamada en una oportunidad de crecimiento</h4>
+
+              <p>
+                En Data Monitoreo, sabemos que cada llamada cuenta. Por eso, desarrollamos una herramienta potente y
+                fácil de usar que te permite transformar cada interacción telefónica en información valiosa para tu
+                negocio.
+              </p>
+
+              <h5 class="mt-4 fw-bold">¿Qué hacemos?</h5>
+              <p>
+                Trackeamos tu número telefónico para brindarte un control total sobre cada llamada entrante. Nuestra
+                plataforma te permite:
+              </p>
+              <ul>
+                <li>Escuchar y grabar todas las llamadas para asegurar la calidad en la atención.</li>
+                <li>Medir la duración de cada interacción.</li>
+                <li>Identificar los días y horarios con mayor volumen de llamadas.</li>
+                <li>Detectar patrones de comportamiento y puntos críticos en tu proceso de ventas o servicio al cliente.
+                </li>
+              </ul>
+
+              <h5 class="mt-4 fw-bold">¿Por qué elegir Data Monitoreo?</h5>
+              <p>
+                <strong>Mejora la atención al cliente:</strong> Al escuchar las llamadas, puedes identificar
+                oportunidades de mejora y asegurarte de que tus clientes reciban respuestas claras y efectivas.
+              </p>
+              <p>
+                <strong>Optimiza tus campañas de marketing:</strong> Accede a informes semanales y mensuales con datos
+                clave sobre el rendimiento de tus campañas: origen de las llamadas, horarios más activos y más.
+              </p>
+              <p>
+                <strong>Toma de decisiones basadas en datos reales:</strong> Con nuestra herramienta, tienes una visión
+                completa del recorrido telefónico de tus clientes y puedes actuar con precisión.
+              </p>
+              <p>
+                <strong>Fácil de usar y pensada para marketing:</strong> Nuestra plataforma es intuitiva, con accesos
+                específicos para tu equipo de marketing y capacitaciones incluidas para que todos aprovechen al máximo
+                su potencial.
+              </p>
+
+              <h5 class="mt-4 fw-bold">Resultados que se ven y se escuchan</h5>
+              <p>
+                No más suposiciones. Con nuestra herramienta, tendrás claridad total sobre lo que ocurre en cada
+                llamada. Ya sea para mejorar tu atención, aumentar tus ventas o entender el impacto de tus campañas
+                digitales, nuestra herramienta te ofrece el control que necesitas.
+              </p>
+              <p class="fw-semibold">
+                Da el siguiente paso en tu estrategia de marketing. Habla con nuestro equipo hoy mismo y descubre cómo
+                podemos ayudarte a potenciar tus resultados.<br>
+                Con Data Monitoreo, conviertes cada llamada en una ventaja competitiva.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
           
-          <!-- Título -->
-          <h3 class="text-center mb-5 fw-bold">Nuestras ventajas competitivas</h3>
-      
-          <!-- Tarjetas (cards) -->
-          <div class="row text-center justify-content-center">
-      
-            <!-- Ventaja 1 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-              <div class="p-4 border rounded-4 h-100">
-                <div class="mb-3">
-                  <img src="assets/icons/handshake.svg" alt="Confiabilidad" width="60" height="60" class="rounded-circle bg-light p-2">
-                </div>
-                <h5 class="fw-semibold">Confiabilidad y experiencia</h5>
-                <p>
-                  Pioneros en tecnologías de la información y líderes en soluciones inteligentes, construimos relaciones sólidas y duraderas.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Ventaja 2 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-              <div class="p-4 border rounded-4 h-100">
-                <div class="mb-3">
-                  <img src="assets/icons/globe.svg" alt="Cobertura" width="60" height="60" class="rounded-circle bg-light p-2">
-                </div>
-                <h5 class="fw-semibold">Cobertura nacional e internacional</h5>
-                <p>
-                  En el mercado mexicano, latinoamericano y estadounidense.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Ventaja 3 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-              <div class="p-4 border rounded-4 h-100">
-                <div class="mb-3">
-                  <img src="assets/icons/headset.svg" alt="Llave en mano" width="60" height="60" class="rounded-circle bg-light p-2">
-                </div>
-                <h5 class="fw-semibold">Proyectos llave en mano</h5>
-                <p>
-                  Detección de necesidades, instalación, capacitación y puesta en marcha. Atención inmediata y especializada.
-                </p>
-              </div>
-            </div>
-      
-            <!-- Ventaja 4 -->
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
-              <div class="p-4 border rounded-4 h-100">
-                <div class="mb-3">
-                  <img src="assets/icons/network.svg" alt="Alianzas" width="60" height="60" class="rounded-circle bg-light p-2">
-                </div>
-                <h5 class="fw-semibold">Alianzas estratégicas</h5>
-                <p>
-                  Programas de socios comerciales (partner program), diseñados para potenciar la rentabilidad en todas tus soluciones.
-                </p>
-              </div>
-            </div>
-      
+          <!-- Columna izquierda (texto) -->
+          <div class="col-md-6 text-center mb-5 mb-md-0">
+            <h3 class="fw-bold">¡Contáctanos!</h3>
+            <p class="text-muted">
+              Conoce más sobre beneficios y ventajas competitivas de nuestras diferentes soluciones.
+            </p>
           </div>
-      
-          <!-- Texto completo adicional -->
-          <div class="row justify-content-center mt-5">
-            <div class="col-lg-12">
-              <div class="text-relaxed">
-      
-                <h4 class="fw-bold text-center mb-4">Convierte cada llamada en una oportunidad de crecimiento</h4>
-      
-                <p>
-                  En Data Monitoreo, sabemos que cada llamada cuenta. Por eso, desarrollamos una herramienta potente y fácil de usar que te permite transformar cada interacción telefónica en información valiosa para tu negocio.
-                </p>
-      
-                <h5 class="mt-4 fw-bold">¿Qué hacemos?</h5>
-                <p>
-                  Trackeamos tu número telefónico para brindarte un control total sobre cada llamada entrante. Nuestra plataforma te permite:
-                </p>
-                <ul>
-                  <li>Escuchar y grabar todas las llamadas para asegurar la calidad en la atención.</li>
-                  <li>Medir la duración de cada interacción.</li>
-                  <li>Identificar los días y horarios con mayor volumen de llamadas.</li>
-                  <li>Detectar patrones de comportamiento y puntos críticos en tu proceso de ventas o servicio al cliente.</li>
-                </ul>
-      
-                <h5 class="mt-4 fw-bold">¿Por qué elegir Data Monitoreo?</h5>
-                <p>
-                  <strong>Mejora la atención al cliente:</strong> Al escuchar las llamadas, puedes identificar oportunidades de mejora y asegurarte de que tus clientes reciban respuestas claras y efectivas.
-                </p>
-                <p>
-                  <strong>Optimiza tus campañas de marketing:</strong> Accede a informes semanales y mensuales con datos clave sobre el rendimiento de tus campañas: origen de las llamadas, horarios más activos y más.
-                </p>
-                <p>
-                  <strong>Toma de decisiones basadas en datos reales:</strong> Con nuestra herramienta, tienes una visión completa del recorrido telefónico de tus clientes y puedes actuar con precisión.
-                </p>
-                <p>
-                  <strong>Fácil de usar y pensada para marketing:</strong> Nuestra plataforma es intuitiva, con accesos específicos para tu equipo de marketing y capacitaciones incluidas para que todos aprovechen al máximo su potencial.
-                </p>
-      
-                <h5 class="mt-4 fw-bold">Resultados que se ven y se escuchan</h5>
-                <p>
-                  No más suposiciones. Con nuestra herramienta, tendrás claridad total sobre lo que ocurre en cada llamada. Ya sea para mejorar tu atención, aumentar tus ventas o entender el impacto de tus campañas digitales, nuestra herramienta te ofrece el control que necesitas.
-                </p>
-                <p class="fw-semibold">
-                  Da el siguiente paso en tu estrategia de marketing. Habla con nuestro equipo hoy mismo y descubre cómo podemos ayudarte a potenciar tus resultados.<br>
-                  Con Data Monitoreo, conviertes cada llamada en una ventaja competitiva.
-                </p>
+    
+          <!-- Columna derecha (formulario) -->
+          <div class="col-md-6">
+            <form class="bg-white shadow rounded-4 p-4">
+              <p class="text-md-start text-muted mb-4">Compártenos tus datos y en breve te contactaremos.</p>
+    
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo *</label>
+                <input type="text" class="form-control" id="nombre" required>
               </div>
-            </div>
+    
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Número de teléfono *</label>
+                <input type="tel" class="form-control" id="telefono" required>
+              </div>
+    
+              <div class="mb-3">
+                <label for="interes" class="form-label">Solución de interés</label>
+                <select id="interes" class="form-select" required>
+                  <option value="" selected disabled>Selecciona una opción</option>
+                  <option value="llamadas">Monitoreo de llamadas</option>
+                  <option value="conversacional">Análisis conversacional</option>
+                  <option value="informes">Informes e insights</option>
+                  <option value="capacitacion">Capacitación personalizada</option>
+                </select>
+              </div>
+    
+              <div class="mb-3">
+                <label for="empresa" class="form-label">Nombre de la empresa *</label>
+                <input type="text" class="form-control" id="empresa" required>
+              </div>
+    
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico *</label>
+                <input type="email" class="form-control" id="correo" required>
+              </div>
+    
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Describe tu inquietud</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+              </div>
+    
+              <div class="d-grid">
+                <button type="submit" class="btn btn-eviar ">Enviar</button>
+              </div>
+    
+              <p class="text-center mt-3 small">
+                <a href="#" class="text-decoration-none link">Aviso de Privacidad</a> |
+                <a href="#" class="text-decoration-none link">Términos y condiciones</a>
+              </p>
+            </form>
           </div>
-      
         </div>
-      </section>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </main>
-  
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
-  
+      </div>
+    </section>
+
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-start">
+          <!-- Columna 1: Logo + direcciones -->
+          <div class="col-12 col-md-6">
+            <img src="assets/logo/data_monitoreo2.png" alt="Data Monitoreo Logo" width="150" class="mb-3" />
+            <h6 class="fw-bold">¡Contáctanos!</h6>
+    
+            <p class="mb-1"><strong>Matriz Guadalajara</strong><br>
+              Calle Tecnología 456, Piso 3, Col. Valle Real<br>
+              Zapopan, Jalisco, C.P. 45136<br>
+              <strong>Tel.:</strong> (33) 1234 5678
+            </p>
+    
+            <p class="mt-3 mb-0"><strong>Sucursal CDMX</strong><br>
+              Av. Revolución 123, Piso 7, Col. Escandón<br>
+              Ciudad de México, C.P. 11800<br>
+              <strong>Tel.:</strong> (55) 9876 5432
+            </p>
+          </div>
+    
+          <!-- Columna 2: Íconos redes -->
+          <div class="col-12 col-md-6 text-md-end text-center">
+            <div class="d-flex justify-content-md-end justify-content-center gap-4 mb-3 flex-wrap">
+              <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-dark">
+                <img src="assets/iconos/linkedin-dark.svg" alt="LinkedIn" width="24">
+                <small>LinkedIn</small>
+              </a>
+              <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-dark">
+                <img src="assets/iconos/facebook-dark.svg" alt="Facebook" width="24">
+                <small>Facebook</small>
+              </a>
+              <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-dark">
+                <img src="assets/iconos/whatsapp-dark.svg" alt="WhatsApp" width="24">
+                <small>WhatsApp</small>
+              </a>
+              <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-dark">
+                <img src="assets/iconos/youtube-dark.svg" alt="YouTube" width="24">
+                <small>YouTube</small>
+              </a>
+            </div>
+            
+    
+            <!-- Flecha de regreso arriba -->
+            <a href="#" class="btn btn-eviar rounded-3 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+              <span class="material-icons text-white">
+                keyboard_arrow_up
+              </span>
+            </a>
+            
+          </div>
+        </div>
+    
+        <div class="row mt-5">
+          <div class="col-12 text-center small text-muted">
+            <p class="mb-1">
+              Data Monitoreo® 2025, todos los derechos reservados. Especialistas en análisis de llamadas, reportes inteligentes y auditoría conversacional.  
+            </p>
+            <a href="#" class="text-decoration-none">Aviso de Privacidad</a> |
+            <a href="#" class="text-decoration-none">Términos y condiciones</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Choices('#interes', {
+        removeItemButton: true,
+        placeholder: true,
+        placeholderValue: 'Selecciona una o varias opciones',
+        searchPlaceholderValue: 'Buscar...'
+      });
+    });
+  </script>
+
+</body>
+
 
 </html>
