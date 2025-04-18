@@ -5,6 +5,11 @@ body {
      font-family: 'Montserrat', sans-serif;
 }
 
+main {
+     padding-top: 120px;
+}
+
+
 
 .row {
      --bs-gutter-x: 1.5rem;
@@ -12,9 +17,10 @@ body {
      display: flex;
      flex-wrap: wrap;
      margin-top: calc(-1 * var(--bs-gutter-y));
-     margin-right: calc(-.5 * var(--bs-gutter-x));
-     margin-left: calc(-.1 * var(--bs-gutter-x));
-}
+     margin-right: calc(-0.5 * var(--bs-gutter-x));
+     margin-left: calc(-0.5 * var(--bs-gutter-x));
+   }
+   
 
 .navbar {
      padding: 26px 10px;
@@ -110,8 +116,8 @@ p {
      letter-spacing: 0.2px;
      /* +legibilidad */
      margin-bottom: 1.4em;
-     /* separación natural */
-     text-wrap: pretty;
+     text-align: justify;
+     
 }
 
 .btn-eviar {
@@ -149,6 +155,18 @@ p {
      background-attachment: scroll;
      position: relative;
      z-index: 1;
+}
+
+
+header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 999;
+     background-color: #fff;
+     /* asegúrate de tener fondo */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 
