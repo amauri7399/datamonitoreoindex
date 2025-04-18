@@ -1,10 +1,10 @@
-html {
-     scroll-behavior: smooth;
-}
-
+html,
 body {
+     overflow-x: hidden;
+     scroll-behavior: smooth;
      font-family: 'Montserrat', sans-serif;
 }
+
 
 .row {
      --bs-gutter-x: 1.5rem;
