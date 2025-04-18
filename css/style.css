@@ -255,3 +255,7 @@ header {
 .whatsapp-icon:hover .whatsapp-label {
      color: #fff;
 }
+
+.text-justify {
+     text-align: justify;
+}
