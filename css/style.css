@@ -20,6 +20,19 @@ main {
      margin-right: calc(-0.5 * var(--bs-gutter-x));
      margin-left: calc(-0.5 * var(--bs-gutter-x));
    }
+
+.container,
+.container-fluid {
+  padding-left: 24px; 
+  padding-right: 24px; 
+}
+
+
+.banner-section .row {
+     padding-left: 1rem;
+     padding-right: 1rem;
+   }
+   
    
 
 .navbar {
