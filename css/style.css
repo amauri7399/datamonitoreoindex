@@ -164,7 +164,7 @@ p {
 
 
 .bg-banner {
-     background-image: url('https://i.ibb.co/hFt6QVKz/bk-1.webp');
+     background-image: url('../assets/backgorund/bk-1.png');
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -172,6 +172,8 @@ p {
      position: relative;
      z-index: 1;
 }
+
+
 
 
 header {
