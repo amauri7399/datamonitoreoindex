@@ -6,15 +6,13 @@ body {
 }
 
 main {
-     padding-top: 110px;
+     padding-top: 80px;
 }
 
 section {
-     scroll-margin-top: 120px; /* o el valor real del header */
+     scroll-margin-top: 110px; /* o el valor real del header */
    }
    
-
-
 
 .row {
      --bs-gutter-x: 1.5rem;
@@ -277,3 +275,16 @@ header {
 .text-justify {
      text-align: justify;
 }
+
+.choices__inner {
+     display: inline-block;
+     vertical-align: top;
+     width: 100%;
+     background-color: #ffffff !important;
+     padding: 7.5px 7.5px 3.75px;
+     border: 1px solid #ddd;
+     border-radius: 2.5px;
+     font-size: 14px;
+     min-height: 44px;
+     overflow: hidden;
+ }
