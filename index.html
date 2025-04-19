@@ -73,7 +73,7 @@
 
   <!-- Contenido principal -->
   <main>
-    <section id="incio" class="banner-section section-kNXIRmxfcw  text-center text-md-start py-5 bg-banner">
+    <section id="inicio" class="banner-section section-kNXIRmxfcw  text-center text-md-start py-5 bg-banner">
 
       <div class="row mt-5 justify-content-center align-items-center">
         <div class="col-12 col-md-10 col-lg-8 px-3 px-md-0">
@@ -491,20 +491,6 @@
     </footer>
     
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
   </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -525,9 +511,17 @@
       const navLinks = navbarCollapse.querySelectorAll('.nav-link');
   
       navLinks.forEach(link => {
-        link.addEventListener('click', function () {
+        link.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+  
+          // Scroll hasta arriba real si es el botón Inicio (href="#")
+          if (href === '#') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+  
+          // Cerrar navbar en mobile
           if (window.innerWidth < 992) {
-            // Usa el método de Bootstrap para cerrar el collapse
             const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
             if (bsCollapse) {
               bsCollapse.hide();
@@ -537,6 +531,7 @@
       });
     });
   </script>
+  
   
 
 </body>
